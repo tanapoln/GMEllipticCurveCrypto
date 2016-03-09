@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name             = "GMEllipticCurveCrypto"
   s.summary          = "An Objective-C library for Elliptic Curve Digital Signing Algorithm (ECDSA) and for Elliptic Curve Diffie-Hellman (ECDH)."
-  s.version          = "v1.2"
+  s.version          = "1.2"
   s.homepage         = "https://github.com/ankitthakur/GMEllipticCurveCrypto"
   s.license          = 'BSD 2-Clause License'
   s.author           = { "Ankit Thakur" => "ankitthakur85@icloud.com" }
   s.source           = {
     :git => "https://github.com/ankitthakur/GMEllipticCurveCrypto.git",
-    :tag => s.version.to_s
+    :tag => "v#{s.version}"
   }
   s.social_media_url = 'https://twitter.com/ankitthakur'
 
