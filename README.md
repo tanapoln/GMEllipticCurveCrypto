@@ -26,4 +26,4 @@ Ankit Thakur, ankitthakur85@gmail.com
 
 ## License
 
-GMEllipticCurveCrypto is available under the MIT license. See the LICENSE file for more info.
+GMEllipticCurveCrypto is available under the BSD-2 Simplified license. See the LICENSE file for more info.
