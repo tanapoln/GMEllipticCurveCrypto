@@ -551,7 +551,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/GMEllipticCurveCrypto/GMEllipticCurveCrypto-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GMEllipticCurveCrypto/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GMEllipticCurveCrypto/GMEllipticCurveCrypto.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -578,7 +578,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/GMEllipticCurveCrypto/GMEllipticCurveCrypto-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GMEllipticCurveCrypto/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GMEllipticCurveCrypto/GMEllipticCurveCrypto.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -604,7 +604,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-GMEllipticCurveCrypto_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GMEllipticCurveCrypto_Tests/Pods-GMEllipticCurveCrypto_Tests.modulemap";
@@ -634,7 +634,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-GMEllipticCurveCrypto_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GMEllipticCurveCrypto_Tests/Pods-GMEllipticCurveCrypto_Tests.modulemap";
@@ -664,7 +664,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-GMEllipticCurveCrypto_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GMEllipticCurveCrypto_Example/Pods-GMEllipticCurveCrypto_Example.modulemap";
@@ -686,6 +686,7 @@
 			baseConfigurationReference = 5502F10B5BFBD1EB57D1CAF43D4CB490 /* GMEllipticCurveCrypto.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = GMEllipticCurveCrypto;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -698,6 +699,7 @@
 			baseConfigurationReference = 5502F10B5BFBD1EB57D1CAF43D4CB490 /* GMEllipticCurveCrypto.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = GMEllipticCurveCrypto;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -718,7 +720,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-GMEllipticCurveCrypto_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GMEllipticCurveCrypto_Example/Pods-GMEllipticCurveCrypto_Example.modulemap";
