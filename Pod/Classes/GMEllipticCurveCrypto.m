@@ -1708,6 +1708,15 @@ static uint64_t Curve_n_384[6] = {0xECEC196ACCC52973, 0x581A0DB248B0A77A, 0xC763
             l_public[0] = 0x04;
             ecc_native2bytes(l_public + 1, l_publicX, _numDigits);
             ecc_native2bytes(l_public + 1 + _bytes, l_publicY, _numDigits);
+            
+            uint8_t l_publicXBytes[_bytes];
+            uint8_t l_publicYBytes[_bytes];
+            ecc_native2bytes(l_publicXBytes, l_publicX, _numDigits);
+            ecc_native2bytes(l_publicYBytes, l_publicY, _numDigits);
+
+            self.publicKeyXBase64 = [[NSData dataWithBytes:l_publicXBytes length:_bytes] base64EncodedStringWithOptions:NSUTF8StringEncoding];
+            
+            self.publicKeyYBase64 = [[NSData dataWithBytes:l_publicYBytes length:_bytes] base64EncodedStringWithOptions:NSUTF8StringEncoding];
 
             return [NSData dataWithBytes:l_public length:2 * _bytes + 1];
         }

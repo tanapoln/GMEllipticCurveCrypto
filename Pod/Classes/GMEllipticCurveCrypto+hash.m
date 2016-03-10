@@ -35,7 +35,7 @@
 #import <CommonCrypto/CommonDigest.h>
 
 NSData *derEncodeInteger(NSData *value) {
-    NSUInteger length = [value length];
+    int length = (int)[value length];
     const unsigned char *data = [value bytes];
 
     int outputIndex = 0;
@@ -63,7 +63,7 @@ NSData *derEncodeInteger(NSData *value) {
 
 NSData *derEncodeSignature(NSData *signature) {
 
-    NSUInteger length = [signature length];
+    int length = (int)[signature length];
     if (length % 2) { return nil; }
 
     NSData *rValue = derEncodeInteger([signature subdataWithRange:NSMakeRange(0, length / 2)]);
@@ -85,7 +85,7 @@ NSData *derEncodeSignature(NSData *signature) {
 }
 
 
-NSRange derDecodeSequence(const unsigned char *bytes, NSUInteger length, NSUInteger index) {
+NSRange derDecodeSequence(const unsigned char *bytes, int length, int index) {
     NSRange result;
     result.location = NSNotFound;
 
@@ -103,7 +103,7 @@ NSRange derDecodeSequence(const unsigned char *bytes, NSUInteger length, NSUInte
     return result;
 }
 
-NSRange derDecodeInteger(const unsigned char *bytes, NSUInteger length, NSUInteger index) {
+NSRange derDecodeInteger(const unsigned char *bytes, int length, int index) {
     NSRange result;
     result.location = NSNotFound;
 
@@ -134,16 +134,16 @@ NSData *derDecodeSignature(NSData *der, int keySize) {
     const unsigned char *data = [der bytes];
 
     // Make sure we have a sequence
-    NSRange sequence = derDecodeSequence(data, length, 0);
+    NSRange sequence = derDecodeSequence(data, (int)length, 0);
     if (sequence.location == NSNotFound) { return nil; }
 
     // Extract the r value (first item)
-    NSRange rValue = derDecodeInteger(data, length, sequence.location);
+    NSRange rValue = derDecodeInteger(data, (int)length, (int)sequence.location);
     if (rValue.location == NSNotFound || rValue.length > keySize) { return nil; }
 
     // Extract the s value (second item)
-    NSUInteger sStart = rValue.location + rValue.length;
-    NSRange sValue = derDecodeInteger(data, length, sStart);
+    int sStart = (int)rValue.location + (int)rValue.length;
+    NSRange sValue = derDecodeInteger(data, (int)length, sStart);
     if (sValue.location == NSNotFound || sValue.length > keySize) { return nil; }
 
     // Create an empty array with 0's

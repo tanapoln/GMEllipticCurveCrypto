@@ -127,6 +127,16 @@ typedef enum GMEllipticCurve {
 @property (nonatomic, strong) NSString *publicKeyBase64;
 
 /**
+ *  The public key x coordinate encoded in base64
+ */
+@property (nonatomic, strong) NSString *publicKeyXBase64;
+
+/**
+ *  The public key y coordinate encoded in base64
+ */
+@property (nonatomic, strong) NSString *publicKeyYBase64;
+
+/**
  *  The private key for an elliptic curve.
  *
  *  This is also sometimes referred to as the secret exponent.
